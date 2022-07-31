@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome icon libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div id="introPage">
+        <div id="introPageText">
+            SNAKE GAME
+        </div>
+        <div id="snakePhoto">
+            <img src="files/snake.svg" alt="Snake Photo">
+        </div>
+        <div id="gameProgress">
+            <div id="gameProgressBar"></div>
+        </div>
+    </div>
+    <div id="gameContainer">
+        <div id="highScoreContainer">
+            <div>High Score:&nbsp;</div>
+            <div id="highScoreText">0</div>
+        </div>
+        <div id="scoreContainer">
+            <div>Score:&nbsp;</div>
+            <div id="scoreText">0</div>
+        </div>
+        <canvas id="gameBoard" width="600" height="600"></canvas>
+        <div id="btnGroups">
+            <button id="playGameBtn"><i class="fa-solid fa-play"></i>&nbsp; Play Game</button>
+            <button id="settingsBtn"><i class="fa-solid fa-gear"></i>&nbsp; Settings</i></button>
+            <select id="selectBtn">
+                <option value="hard">Hard</option>
+                <option value="normal">Normal</option>
+                <option value="easy" selected>Easy</option>
+            </select>
+            <select id="selectBtnColor">
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow" selected>Yellow</option>
+            </select>
+            <button id="backBtn"><i class="fa-solid fa-angles-left"></i>&nbsp;Back</button>
+            <button id="homeBtn"><i class="fa-solid fa-house-chimney"></i>&nbsp; Home</button>
+            <button id="restartBtn"><i class="fa-solid fa-arrows-rotate"></i>&nbsp; Restart</button>
+            <button id="exitBtn"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; Exit</button>
+        </div>
+        <div id="countdown">3</div>
+    </div>
+    <div id="mobileBtnGroups">
+        <button id="upBtn"><i class="fa-solid fa-angle-up"></i></button>
+        <div id="sideBtnGroups">
+            <button id="leftBtn"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="rightBtn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <button id="downBtn"><i class="fa-solid fa-angle-down"></i></button>
+    </div>
+
+    <!-- Javascript -->
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
